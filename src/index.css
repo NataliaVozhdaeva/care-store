@@ -36,6 +36,8 @@
 :root {
   --black-text: #111111;
   --gray-text: #3f4e65;
+  --light-gray: #ededed;
+  --orange: #ffc85e;
 }
 
 html {
@@ -50,12 +52,9 @@ body {
 }
 
 a {
+  color: var(--gray-text);
   text-decoration: none;
   transition: 0.3s;
-}
-
-a:visited {
-  color: currentColor;
 }
 
 a:hover {
@@ -64,6 +63,22 @@ a:hover {
 
 p {
   margin: 0;
+}
+
+.btn {
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: var(--orange);
+  border: none;
+  border-radius: 5.5rem;
+}
+
+.btn:hover {
+  text-shadow: none;
+
+  background-color: #ffc85ecc;
+  cursor: pointer;
 }
 
 .list {
@@ -75,7 +90,6 @@ p {
 .wrapper {
   max-width: 1370px;
   margin: auto;
-  padding: 1rem 0;
 }
 
 .container {
@@ -85,6 +99,7 @@ p {
 }
 
 .top-container {
+  padding: 1rem 0;
   border-bottom: 1px solid #3f4e6533;
 }
 
@@ -117,6 +132,12 @@ p {
   color: var(--gray-text);
 }
 
+.small-text {
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
 .location::before,
 .email:before {
   position: absolute;
@@ -130,4 +151,94 @@ p {
 
 .email::before {
   content: url('./assets/img/icons_letter.svg');
+}
+
+.header-container {
+  padding: 5px 0 1rem;
+  border-bottom: 1px solid #3f4e6533;
+}
+
+.catalog-btn {
+  padding: 1.5rem 5.7rem 1.5rem 3.5rem;
+
+  background: url('./assets/img/icons_btn.svg') no-repeat top 1.5rem right 3.5rem, var(--orange);
+}
+
+.price-btn {
+  padding: 1.5rem 4.5rem 1.5rem 3rem;
+
+  background: url('./assets/img/icons_download.svg') no-repeat top 1.5rem right 3rem, var(--orange);
+}
+
+.search-btn {
+  box-sizing: border-box;
+
+  padding: 20px;
+  width: 263px;
+  height: 59px;
+  background-color: var(--light-gray);
+}
+
+.search-btn::placeholder {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray-text);
+}
+
+.search-icon {
+  position: relative;
+}
+
+.search-icon::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: url('./assets/img/icons_search.svg') no-repeat center, var(--orange);
+}
+
+.contants {
+  height: 92px;
+  padding: 0 85px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+
+  background: url('./assets/img/call-center.png') no-repeat center right;
+}
+
+.cart-block {
+  position: relative;
+
+  padding-left: 70px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: url('./assets/img/icons_cart.svg') no-repeat center left;
+}
+
+.goodsCount {
+  position: absolute;
+  top: 0;
+  left: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: var(--orange);
+  border-radius: 50%;
 }

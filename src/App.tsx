@@ -7,15 +7,15 @@ import { Header } from './components/header';
 
 function App() {
   return (
-    <div>
+    <>
       <Navigation />
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path='/' element={<Catalog />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/good/:id' element={<Good />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
