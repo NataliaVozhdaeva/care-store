@@ -1,3 +1,133 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  src: local('Inter-Light'), url('./assets/fonts/Inter/Inter-Light.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Light.woff') format('woff'),
+    url('./assets/fonts/Inter/Inter-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: local('Inter-Regular'), url('./assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('./assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter-Bold'), url('./assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('./assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --black-text: #111111;
+  --gray-text: #3f4e65;
+}
+
+html {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+a:hover {
+  text-shadow: 0 0 1px var(--gray-text);
+}
+
+p {
+  margin: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1370px;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-container {
+  border-bottom: 1px solid #3f4e6533;
+}
+
+.nav-container {
+  display: flex;
+  column-gap: 4.3rem;
+}
+
+.group-container {
+  width: 35.5rem;
+}
+
+.element-container {
+  position: relative;
+
+  width: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-left: 2.5rem;
+}
+
+.main-text {
+  font-weight: bold;
+  color: var(--black-text);
+}
+
+.additional-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--gray-text);
+}
+
+.location::before,
+.email:before {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+}
+
+.location::before {
+  content: url('./assets/img/icons_location.svg');
+}
+
+.email::before {
+  content: url('./assets/img/icons_letter.svg');
+}

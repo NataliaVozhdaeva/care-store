@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navigation />
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path='/' element={<Catalog />} />
         <Route path='/cart' element={<Cart />} />
