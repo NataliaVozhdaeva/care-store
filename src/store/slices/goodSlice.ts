@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { createImmediatelyInvokedFunctionExpression } from 'typescript';
 import { IGood } from '../../models/models';
 
 interface GoodState {

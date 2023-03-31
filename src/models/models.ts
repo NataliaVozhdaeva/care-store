@@ -9,3 +9,7 @@ export interface IGood {
   desc: string;
   price: number;
 }
+
+export interface ServerResponse<T> {
+  results: T[];
+}
