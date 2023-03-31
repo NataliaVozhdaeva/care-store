@@ -1,3 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import goodReducer from './slices/goodSlice';
 
-export const store = configureStore({ reducer: {} });
+const rootReducer = combineReducers({
+  good: goodReducer,
+});
+
+export function setupStore() {
+  return configureStore({
+    reducer: rootReducer,
+  });
+}
