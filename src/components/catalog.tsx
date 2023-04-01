@@ -1,21 +1,24 @@
 import React, { useEffect } from 'react';
-import { useAppDispatch } from '../hooks/redux';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchGoods } from '../store/actions/goodActions';
-import { CatalogItem } from './catalog-item';
+import { CatalogItem } from './catalogItem';
 
 export function Catalog() {
   const dispatch = useAppDispatch();
+  const { error, loading, goods } = useAppSelector((state) => state.good);
 
   useEffect(() => {
     dispatch(fetchGoods());
-  });
+  }, [dispatch]);
 
+  console.log(goods);
   return (
     <main className='main'>
-      {/* 	<div >
-		{tokens.map((el) => <Item key={el.id} token={el} />)}
-	</div> */}
-      {/* <CatalogItem /> */}
+      <div className='catalog-list'>
+        {goods.map((el) => (
+          <CatalogItem key={el.id} good={el} />
+        ))}
+      </div>
     </main>
   );
 }

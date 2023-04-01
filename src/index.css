@@ -267,6 +267,7 @@ p {
 }
 
 .title {
+  align-self: flex-start;
   margin-bottom: 20px;
   font-size: 1.15rem;
   color: var(--black-text);
@@ -316,4 +317,10 @@ p {
 
   background: url('./assets/img/icons_cart-white.svg') no-repeat center right 25px, var(--orange);
   background-size: 27px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

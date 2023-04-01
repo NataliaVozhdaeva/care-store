@@ -1,40 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IGood } from '../models/models';
 
-export function CatalogItem() {
+interface CatalogCardProps {
+  good: IGood;
+}
+
+export function CatalogItem({ good }: CatalogCardProps) {
   return (
     <Link to='#' className='item-container'>
-      <img
-        src='https://www.perfectoria.ru/sites/default/files/styles/large/public/field/image/neutrogena_krem_dlya_ruk_s_zapahom_50ml.jpg?itok=C5u1ZXzh'
-        alt='Крем для рук'
-        height={'194'}
-      />
+      <img src={good.url} alt={good.title} height={'194'} />
       <div className='size'>
         <img src={'img/bottle.png'} alt='Объем' />
         <span className='additional-text'>450 мл</span>
       </div>
       <div className='title'>
         <span className='brend'>
-          <b>brend1 </b>
+          <b>АОС </b>
         </span>
-        <span className='text'>Крем для рук самый-самый, чтоб заполнить текстом</span>
+        <span className='text'>{good.title}</span>
       </div>
       <ul className='list info-list'>
         <li className='info-item'>
           <span className='gray'>Штрихкод:&nbsp;</span>
-          <span className='bold'>1</span>
+          <span className='bold'>{good.id}</span>
         </li>
         <li className='info-item'>
           <span className='gray'>Производитель:&nbsp;</span>
-          <span className='bold'>1144321</span>
+          <span className='bold'>{good.producer}</span>
         </li>
         <li className='info-item'>
           <span className='gray'>Бренд:&nbsp;</span>
-          <span className='bold'>111</span>
+          <span className='bold'>{good.brand}</span>
         </li>
       </ul>
       <div className='order'>
-        <span className='price'>235&nbsp;&#8376;</span>
+        <span className='price'>{good.price}&nbsp;&#8376;</span>
         <button className='btn order-btn'>В КОРЗИНУ</button>
       </div>
     </Link>
