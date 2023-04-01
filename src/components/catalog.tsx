@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchGoods } from '../store/actions/goodActions';
 import { CatalogItem } from './catalogItem';
 import { FilterPanel } from './filterPanel';
+import { MainTop } from './mainTop';
 
 export function Catalog() {
   const dispatch = useAppDispatch();
@@ -12,14 +13,16 @@ export function Catalog() {
     dispatch(fetchGoods());
   }, [dispatch]);
 
-  console.log(goods);
   return (
     <main className='main'>
-      <FilterPanel />
-      <div className='catalog-list'>
-        {goods.map((el) => (
-          <CatalogItem key={el.id} good={el} />
-        ))}
+      <MainTop />
+      <div className='main-content'>
+        <FilterPanel />
+        <div className='catalog-list'>
+          {goods.map((el) => (
+            <CatalogItem key={el.id} good={el} />
+          ))}
+        </div>{' '}
       </div>
     </main>
   );
