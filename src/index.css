@@ -77,6 +77,10 @@ p {
   cursor: pointer;
 }
 
+input.btn {
+  color: var(--gray-text);
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -242,6 +246,7 @@ p {
 .main {
   max-width: 1370px;
   margin: auto;
+  display: flex;
 }
 
 .item-container {
@@ -252,6 +257,10 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  background-color: #ffffff;
+  box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
 }
 
 .item-container:hover {
@@ -323,4 +332,148 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 21px;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 238px;
+  margin-right: 108px;
+}
+
+.filter-title,
+.filer-subtitle {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.filter-form {
+  padding-top: 10px;
+}
+
+.filter-prise {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  padding-bottom: 30px;
+
+  color: var(--gray-text);
+}
+
+.price-container {
+  display: flex;
+  max-width: 100%;
+}
+
+.btn-small {
+  width: 105px;
+  height: 23px;
+
+  background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+}
+
+.btn-small::placeholder {
+  font-weight: normal;
+  color: var(--gray-text);
+  text-align: center;
+}
+
+.filter-producer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-bottom: 25px;
+}
+
+.search-btn_filter {
+  width: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--gray-text);
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.show-all {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 150%;
+  color: var(--gray-text);
+
+  background-color: transparent;
+  text-align: left;
+}
+
+.show-all:hover {
+  background-color: transparent;
+}
+
+.caret {
+  font-size: 0.5rem;
+}
+
+.formcontrol-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.formcontrol-container > .btn {
+  height: 60px;
+}
+
+.submit {
+  width: 160px;
+}
+
+.reset {
+  width: 60px;
+
+  background: url(./assets/img/bin.svg) no-repeat center, var(--orange);
+}
+
+.types-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  padding-top: 15px;
+}
+
+.type-label {
+  line-height: 150%;
+  color: var(--gray-text);
+
+  cursor: pointer;
+}
+
+.type-label .type-input,
+.type-label .type-input:checked {
+  position: absolute;
+  z-index: -1;
+
+  display: block;
+  width: 0;
+  height: 0;
+
+  opacity: 0;
+}
+
+.type-label .type-input:checked + span {
+  font-weight: bold;
 }

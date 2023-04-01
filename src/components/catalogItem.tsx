@@ -11,11 +11,11 @@ export function CatalogItem({ good }: CatalogCardProps) {
     <Link to='#' className='item-container'>
       <img src={good.url} alt={good.title} height={'194'} />
       <div className='size'>
-        <img src={'img/bottle.png'} alt='Объем' />
-        <span className='additional-text'>450 мл</span>
+        <img src={`img/${good.type === 'volume' ? 'bottle' : 'box'}.png`} />
+        <span className='additional-text'>450 {`${good.type === 'volume' ? 'мл' : 'гр'}`}</span>
       </div>
       <div className='title'>
-        <span className='brend'>
+        <span className='brand'>
           <b>АОС </b>
         </span>
         <span className='text'>{good.title}</span>

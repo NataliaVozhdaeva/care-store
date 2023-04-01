@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchGoods } from '../store/actions/goodActions';
 import { CatalogItem } from './catalogItem';
+import { FilterPanel } from './filterPanel';
 
 export function Catalog() {
   const dispatch = useAppDispatch();
@@ -14,6 +15,7 @@ export function Catalog() {
   console.log(goods);
   return (
     <main className='main'>
+      <FilterPanel />
       <div className='catalog-list'>
         {goods.map((el) => (
           <CatalogItem key={el.id} good={el} />

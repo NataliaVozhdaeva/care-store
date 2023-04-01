@@ -7,7 +7,7 @@
       "type": "volume",
       "size": 220,
       "producer": "producer 1",
-      "brend": "brend",
+      "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 100
     },
@@ -18,7 +18,7 @@
       "type": "weight",
       "size": 330,
       "producer": "producer  2",
-      "brend": "BREND",
+      "brand": "brand",
       "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
       "price": 120
     },
@@ -29,7 +29,7 @@
       "type": "weight",
       "size": 150,
       "producer": "producer  3",
-      "brend": "brend 1111",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
@@ -40,7 +40,7 @@
       "type": "weight",
       "size": 220,
       "producer": "producer  3",
-      "brend": "brend 1111",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
@@ -51,7 +51,7 @@
       "type": "weight",
       "size": 200,
       "producer": "producer  2",
-      "brend": "BREND",
+      "brand": "brand",
       "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
       "price": 120
     },
@@ -62,7 +62,7 @@
       "type": "volume",
       "size": 200,
       "producer": "producer  1",
-      "brend": "brend",
+      "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 100
     },
@@ -73,7 +73,7 @@
       "type": "volume",
       "size": 333,
       "producer": "producer  1",
-      "brend": "brend",
+      "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 100
     },
@@ -84,7 +84,7 @@
       "type": "volume",
       "size": 250,
       "producer": "producer  3",
-      "brend": "brend3333",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     },
@@ -94,8 +94,8 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 200,
-      "producer": "producer  3",
-      "brend": "brend3333",
+      "producer": "producer  0",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     },
@@ -105,30 +105,30 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 200,
-      "producer": "producer  3",
-      "brend": "brend 1111",
+      "producer": "producer  1",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
     {
       "id": 10,
-      "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fu.makeup.com.ua%2F1%2F1j%2F1j7joo4ewlkg.jpg&f=1&nofb=1&ipt=5ef0341c9bfe4a11398e7089242ca4d62bc7656ca2e566c83aa031601bec23a9&ipo=images",
-      "title": "Уход за волосами",
+      "url": "https://recommerce.gumlet.io/korcos2020.reshop.kz/catalog/1555/1475664772610a29b83aa27_original.jpg?enlarge=true&mode=fit&width=900&format=auto",
+      "title": "Крем для ног",
       "type": "volume",
       "size": 400,
       "producer": "producer  3",
-      "brend": "brend3333",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     },
     {
       "id": 11,
-      "url": "https://apteka74.ru/upload/iblock/4b0/4b056e4a25275bbce2f2429249103fc6.jpg",
-      "title": "Крем для тела",
+      "url": "https://recommerce.gumlet.io/korcos2020.reshop.kz/catalog/1555/1475664772610a29b83aa27_original.jpg?enlarge=true&mode=fit&width=900&format=auto",
+      "title": "Крем для ног",
       "type": "weight",
       "size": 100,
-      "producer": "producer  3",
-      "brend": "brend 1111",
+      "producer": "producer  2",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
@@ -138,8 +138,8 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 200,
-      "producer": "producer  3",
-      "brend": "brend 1111",
+      "producer": "producer  0",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
@@ -149,8 +149,8 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 300,
-      "producer": "producer  3",
-      "brend": "brend3333",
+      "producer": "producer  0",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     },
@@ -161,7 +161,7 @@
       "type": "weight",
       "size": 200,
       "producer": "producer  3",
-      "brend": "brend 1111",
+      "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "price": 220
     },
@@ -172,7 +172,7 @@
       "type": "volume",
       "size": 200,
       "producer": "producer  1",
-      "brend": "brend",
+      "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 100
     },
@@ -183,7 +183,7 @@
       "type": "volume",
       "size": 100,
       "producer": "producer  1",
-      "brend": "brend",
+      "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 100
     },
@@ -194,7 +194,7 @@
       "type": "volume",
       "size": 100,
       "producer": "producer  3",
-      "brend": "brend3333",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     },
@@ -205,7 +205,7 @@
       "type": "volume",
       "size": 300,
       "producer": "producer 3",
-      "brend": "brend3333",
+      "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "price": 333
     }

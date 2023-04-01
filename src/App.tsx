@@ -8,8 +8,10 @@ import { Header } from './components/header';
 function App() {
   return (
     <>
-      <Navigation />
-      <Header />
+      <header>
+        <Navigation />
+        <Header />
+      </header>
       <Routes>
         <Route path='/' element={<Catalog />} />
         <Route path='/cart' element={<Cart />} />
