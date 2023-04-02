@@ -1,17 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchGoods } from '../store/actions/goodActions';
 import { CatalogItem } from '../components/catalogItem';
 import { FilterPanel } from '../components/filterPanel';
 import { MainTop } from '../components/mainTop';
+import ReactPaginate from 'react-paginate';
+
+const itemsPerPage = 6;
 
 export function Catalog() {
-  const dispatch = useAppDispatch();
   const { error, loading, goods } = useAppSelector((state) => state.good);
+  const page = useRef(1);
+  const dispatch = useAppDispatch();
+
+  const [itemOffset, setItemOffset] = useState(0);
+  const endOffset = itemOffset + itemsPerPage;
+  let currentGoods = goods.slice(itemOffset, endOffset);
 
   useEffect(() => {
-    dispatch(fetchGoods());
+    dispatch(fetchGoods(page.current, itemsPerPage));
   }, [dispatch]);
+
+  const pageCount = Math.ceil(goods.length / itemsPerPage);
+  const pageChangeHandler = ({ selected }: { selected: number }) => {
+    const newOffset = (selected * itemsPerPage) % goods.length;
+    setItemOffset(newOffset);
+
+    /*  page.current = selected + 1;
+    dispatch(fetchGoods(page.current, itemsPerPage)); */
+  };
 
   return (
     <main className='main'>
@@ -21,11 +38,24 @@ export function Catalog() {
       <div className='main-content'>
         <FilterPanel />
         <div className='catalog-list'>
-          {goods.map((el) => (
+          {currentGoods.map((el) => (
             <CatalogItem key={el.id} good={el} />
           ))}
-        </div>{' '}
+        </div>
       </div>
+      <ReactPaginate
+        breakLabel='...'
+        nextLabel=''
+        previousLabel=''
+        onPageChange={pageChangeHandler}
+        pageRangeDisplayed={5}
+        pageCount={pageCount}
+        forcePage={page.current - 1}
+        containerClassName='pagination-conainer list'
+        pageClassName='pagination-item'
+        previousLinkClassName='pag-prev-arrow'
+        nextLinkClassName='pag-next-arrow'
+      />
     </main>
   );
 }

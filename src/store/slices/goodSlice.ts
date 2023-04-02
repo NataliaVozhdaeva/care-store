@@ -5,14 +5,21 @@ interface GoodState {
   loading: boolean;
   error: string;
   goods: IGood[];
+  /* count: number; */
 }
 
 const initialState: GoodState = {
   loading: false,
   error: '',
   goods: [],
+  /*  count: 0, */
 };
 
+/* interface GoodPayload {
+  goods: IGood[];
+  count: number;
+}
+ */
 export const goodSlice = createSlice({
   name: 'good',
   initialState,
@@ -20,9 +27,11 @@ export const goodSlice = createSlice({
     fetching(state) {
       state.loading = true;
     },
-    fetchSucsess(state, action: PayloadAction<IGood[]>) {
+    fetchSucsess(state, action: PayloadAction</* GoodPayload */ IGood[]>) {
+      state.error = '';
       state.loading = false;
       state.goods = action.payload;
+      /* state.count = action.payload.count; */
     },
     fetchError(state, action: PayloadAction<Error>) {
       state.loading = false;

@@ -253,6 +253,7 @@ input.btn {
 
 .main-content {
   display: flex;
+  padding-bottom: 50px;
 }
 
 .item-container {
@@ -569,4 +570,54 @@ select {
 
 .text-loading {
   color: var(--gray-text);
+}
+
+.pagination-conainer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 50px;
+  height: 35px;
+
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+.pagination-item {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected {
+  background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+}
+
+.pag-prev-arrow,
+.pag-next-arrow {
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+
+  cursor: pointer;
+}
+
+.pag-prev-arrow {
+  margin-right: 21px;
+
+  background-image: url('./assets/img/arrow.svg');
+}
+
+.pag-next-arrow {
+  margin-left: 21px;
+
+  background-image: url('./assets/img/arrow.svg');
+  transform: rotate(180deg);
 }
