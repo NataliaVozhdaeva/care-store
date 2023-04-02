@@ -1,17 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { IGood } from '../models/models';
+import { useNavigate } from 'react-router-dom';
 
 interface CatalogCardProps {
   good: IGood;
 }
 
 export function CatalogItem({ good }: CatalogCardProps) {
+  const navigate = useNavigate();
+
+  const clickHandker = () => navigate(`/card/${good.id}`);
+
   return (
-    <Link to='#' className='item-container'>
+    <div className='item-container' onClick={clickHandker}>
       <img src={good.url} alt={good.title} height={'194'} />
       <div className='size'>
-        <img src={`img/${good.type === 'volume' ? 'bottle' : 'box'}.png`} />
+        <img src={`img/${good.type === 'volume' ? 'bottle' : 'box'}.png`} alt='размер' />
         <span className='additional-text'>450 {`${good.type === 'volume' ? 'мл' : 'гр'}`}</span>
       </div>
       <div className='title'>
@@ -38,6 +42,6 @@ export function CatalogItem({ good }: CatalogCardProps) {
         <span className='price'>{good.price}&nbsp;&#8376;</span>
         <button className='btn order-btn'>В КОРЗИНУ</button>
       </div>
-    </Link>
+    </div>
   );
 }

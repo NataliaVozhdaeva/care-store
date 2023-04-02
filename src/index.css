@@ -555,3 +555,18 @@ select {
   width: 0;
   height: 0;
 }
+
+.text-error,
+.text-loading {
+  font-size: 1.4rem;
+  margin: auto;
+  padding: 30px;
+}
+
+.text-error {
+  color: var(--orange);
+}
+
+.text-loading {
+  color: var(--gray-text);
+}

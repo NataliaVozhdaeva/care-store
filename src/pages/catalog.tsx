@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchGoods } from '../store/actions/goodActions';
-import { CatalogItem } from './catalogItem';
-import { FilterPanel } from './filterPanel';
-import { MainTop } from './mainTop';
+import { CatalogItem } from '../components/catalogItem';
+import { FilterPanel } from '../components/filterPanel';
+import { MainTop } from '../components/mainTop';
 
 export function Catalog() {
   const dispatch = useAppDispatch();
@@ -16,6 +16,8 @@ export function Catalog() {
   return (
     <main className='main'>
       <MainTop />
+      {error && <p className='text-error'>{error}</p>}
+      {loading && <p className='text-loading'>Loading...</p>}
       <div className='main-content'>
         <FilterPanel />
         <div className='catalog-list'>
