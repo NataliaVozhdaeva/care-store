@@ -25,9 +25,6 @@ export function Catalog() {
   const pageChangeHandler = ({ selected }: { selected: number }) => {
     const newOffset = (selected * itemsPerPage) % goods.length;
     setItemOffset(newOffset);
-
-    /*  page.current = selected + 1;
-    dispatch(fetchGoods(page.current, itemsPerPage)); */
   };
 
   return (

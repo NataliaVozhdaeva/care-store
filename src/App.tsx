@@ -4,6 +4,7 @@ import { GoodCart } from './pages/goodCart';
 import { Cart } from './components/cart';
 import { Navigation } from './components/navigation';
 import { Header } from './components/header';
+import { Footer } from './components/footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/good/:id' element={<GoodCart />} />
       </Routes>
+      <Footer />
     </>
   );
 }
