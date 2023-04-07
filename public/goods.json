@@ -6,10 +6,11 @@
       "title": "Крем для рук",
       "type": "volume",
       "size": 220,
-      "producer": "producer 1",
+      "producer": "aaaaaa",
       "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 100
+      "price": 100,
+      "care": ["hands"]
     },
     {
       "id": 1,
@@ -17,10 +18,11 @@
       "title": "Крем для ног",
       "type": "weight",
       "size": 330,
-      "producer": "producer  2",
+      "producer": "bbbb",
       "brand": "brand",
       "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-      "price": 120
+      "price": 120,
+      "care": ["legs"]
     },
     {
       "id": 2,
@@ -28,10 +30,11 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 150,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 220,
+      "care": ["body"]
     },
     {
       "id": 3,
@@ -39,10 +42,11 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 220,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 220,
+      "care": ["body"]
     },
     {
       "id": 4,
@@ -50,10 +54,11 @@
       "title": "Крем для ног",
       "type": "weight",
       "size": 200,
-      "producer": "producer  2",
+      "producer": "bbbb",
       "brand": "brand",
       "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-      "price": 120
+      "price": 120,
+      "care": ["body", "legs"]
     },
     {
       "id": 5,
@@ -61,10 +66,11 @@
       "title": "Крем для рук",
       "type": "volume",
       "size": 200,
-      "producer": "producer  1",
+      "producer": "aaaaa",
       "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 100
+      "price": 100,
+      "care": ["body", "hands"]
     },
     {
       "id": 6,
@@ -72,10 +78,11 @@
       "title": "Крем для рук",
       "type": "volume",
       "size": 333,
-      "producer": "producer  1",
+      "producer": "aaaaaa",
       "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 100
+      "price": 100,
+      "care": ["body", "hands"]
     },
     {
       "id": 7,
@@ -83,10 +90,11 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 250,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["heir"]
     },
     {
       "id": 8,
@@ -94,10 +102,11 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 200,
-      "producer": "producer  0",
+      "producer": "ffffff",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["heir"]
     },
     {
       "id": 9,
@@ -105,10 +114,11 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 200,
-      "producer": "producer  1",
+      "producer": "aaaaaa",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 220,
+      "care": ["body", "legs"]
     },
     {
       "id": 10,
@@ -116,10 +126,11 @@
       "title": "Крем для ног",
       "type": "volume",
       "size": 400,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["body", "legs"]
     },
     {
       "id": 11,
@@ -127,10 +138,11 @@
       "title": "Крем для ног",
       "type": "weight",
       "size": 100,
-      "producer": "producer  2",
+      "producer": "bbbb",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 220,
+      "care": ["legs"]
     },
     {
       "id": 12,
@@ -138,10 +150,11 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 200,
-      "producer": "producer  0",
+      "producer": "ffffff",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 220,
+      "care": ["body", "hands"]
     },
     {
       "id": 13,
@@ -149,10 +162,11 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 300,
-      "producer": "producer  0",
+      "producer": "ffffff",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["hair"]
     },
     {
       "id": 14,
@@ -160,10 +174,11 @@
       "title": "Крем для тела",
       "type": "weight",
       "size": 200,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand 1111",
       "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "price": 220
+      "price": 288,
+      "care": ["body", "hands", "legs"]
     },
     {
       "id": 15,
@@ -171,10 +186,11 @@
       "title": "Крем для рук",
       "type": "volume",
       "size": 200,
-      "producer": "producer  1",
+      "producer": "aaaaaa",
       "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 100
+      "price": 100,
+      "care": ["hands"]
     },
     {
       "id": 16,
@@ -182,10 +198,11 @@
       "title": "Крем для рук",
       "type": "volume",
       "size": 100,
-      "producer": "producer  1",
+      "producer": "aaaaaa",
       "brand": "brand",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 100
+      "price": 100,
+      "care": ["body", "hands"]
     },
     {
       "id": 17,
@@ -193,10 +210,11 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 100,
-      "producer": "producer  3",
+      "producer": "cccccc",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["hair"]
     },
     {
       "id": 18,
@@ -204,10 +222,11 @@
       "title": "Уход за волосами",
       "type": "volume",
       "size": 300,
-      "producer": "producer 3",
+      "producer": "cccccc",
       "brand": "brand3333",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "price": 333
+      "price": 333,
+      "care": ["hair"]
     }
   ]
 }

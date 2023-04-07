@@ -1,4 +1,5 @@
 import React from 'react';
+import { SearchPanel } from './searchPanel';
 
 export function FilterPanel() {
   return (
@@ -15,9 +16,7 @@ export function FilterPanel() {
         </div>
         <div className='filter-producer'>
           <h4 className='filer-subtitle'>Производитель</h4>
-          <span className='search-icon'>
-            <input type='text' placeholder='Поиск...' className='btn search-btn_filter search-btn' />
-          </span>
+          <SearchPanel />
           <div className='checkbox-container'>
             <label htmlFor='producer' className='label'>
               <input type='checkbox' className='checkbox' id='producer0' />
